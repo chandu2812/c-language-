@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+    float principal, rate, time, compound_interest;
+
+    // Taking input
+    printf("Enter principal amount: ");
+    scanf("%f", &principal);
+
+    printf("Enter rate of interest: ");
+    scanf("%f", &rate);
+
+    printf("Enter time in years: ");
+    scanf("%f", &time);
+
+    // Compound interest formula: A = P*(1 + r/100)^t
+    float amount = principal * pow((1 + rate / 100), time);
+    compound_interest = amount - principal;
+
+    // Output
+    printf("Compound interest: %.2f\n", compound_interest);
+
+    return 0;
+}
