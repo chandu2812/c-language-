@@ -4,7 +4,6 @@
 int main() {
     float principal, rate, time, compound_interest;
 
-    // Taking input
     printf("Enter principal amount: ");
     scanf("%f", &principal);
 
@@ -18,7 +17,6 @@ int main() {
     float amount = principal * pow((1 + rate / 100), time);
     compound_interest = amount - principal;
 
-    // Output
     printf("Compound interest: %.2f\n", compound_interest);
 
     return 0;
